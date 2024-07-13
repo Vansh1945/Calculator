@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rozha+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f1f1;
+}
+.cal{
+    font-size: 20px;
+    text-align: center;
+    background-color: #abd8ff;
+    border-radius: 5px;
+    margin: auto;
+}
+.container{
+position: relative;
+max-width: 300px;
+width: 100%;
+border-radius: 12px;
+padding: 10px 20px 30px;
+background: #fafafa;
+box-shadow: 5px 10px 20px rgb(127, 127, 127);
+}
+.display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color:black ;
+    pointer-events: none;
+}
+.button{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button button{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+ 
+}
+.button button:active{
+    transform: scale(1.12);
+
+}
+.operator{
+    color: #2f9fff;
+    font-weight: 500;
+}
